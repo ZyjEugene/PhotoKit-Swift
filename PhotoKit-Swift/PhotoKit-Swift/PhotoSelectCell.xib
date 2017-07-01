@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoSelectCell" customModule="PhotoKit_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="112"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTh-UT-Q6l">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="112"/>
+                        <color key="backgroundColor" red="0.37149028480000001" green="0.47081048869999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwy-2e-uK3">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="112"/>
+                        <state key="selected" backgroundImage="Img Overlay"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CTh-UT-Q6l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1Xg-aA-6hU"/>
+                <constraint firstAttribute="bottom" secondItem="CTh-UT-Q6l" secondAttribute="bottom" id="DLN-UN-VKa"/>
+                <constraint firstAttribute="trailing" secondItem="gwy-2e-uK3" secondAttribute="trailing" id="Fvy-jl-SIF"/>
+                <constraint firstAttribute="trailing" secondItem="CTh-UT-Q6l" secondAttribute="trailing" id="Mru-FS-dd0"/>
+                <constraint firstItem="gwy-2e-uK3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NPT-e2-LX3"/>
+                <constraint firstItem="gwy-2e-uK3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Orw-x7-IDl"/>
+                <constraint firstAttribute="bottom" secondItem="gwy-2e-uK3" secondAttribute="bottom" id="P2W-0K-aY5"/>
+                <constraint firstItem="CTh-UT-Q6l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bRd-Xo-6e4"/>
+            </constraints>
+            <size key="customSize" width="119" height="112"/>
+            <connections>
+                <outlet property="photoImage" destination="CTh-UT-Q6l" id="5Ay-ko-wh7"/>
+                <outlet property="selectBtn" destination="gwy-2e-uK3" id="HsJ-nt-yL5"/>
+            </connections>
+            <point key="canvasLocation" x="-62.5" y="-67"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img Overlay" width="125" height="125"/>
+    </resources>
+</document>
